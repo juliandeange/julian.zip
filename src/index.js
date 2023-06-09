@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import './fonts/SvBasicManual.ttf'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

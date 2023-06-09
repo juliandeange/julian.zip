@@ -8,6 +8,7 @@
   font-size: calc(10px + 2vmin);
   background-color: beige;
   font-size: medium;
+  font-family: "SvBasicManual";
 }
 
 .App-logo {
@@ -39,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.font-terminal {
+  font-family: "SvBasicManual";
 }
