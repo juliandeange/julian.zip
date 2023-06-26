@@ -7,7 +7,6 @@ const App = () => {
             unzipping...
         </div>
     )
-    ;
 }
 
 export default App;
