@@ -1,12 +1,14 @@
-import './App.css';
+import './styles/App.css';
+import Main from './components/main'
 
 const App = () => {
 
     return (
         <div className="App">
-            unzipping...
+            {/* unzipping... */}
+            <Main />
         </div>
     )
 }
 
-export default App;
+export default App

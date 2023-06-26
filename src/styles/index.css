@@ -15,6 +15,6 @@ code {
 @font-face {
   font-family: "SvBasicManual";
   src: local("SvBasicManual"),
-   url("./fonts/SvBasicManual.ttf") format("truetype");
+   url("../fonts/SvBasicManual.ttf") format("truetype");
   /* font-weight: bold; */
  }
