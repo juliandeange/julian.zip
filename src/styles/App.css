@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-color: beige;
+  background-color: #FFF5EF;
   font-size: medium;
   font-family: "SvBasicManual";
 }
@@ -25,17 +25,17 @@
   letter-spacing: 0%;
 }
 
-.Bodycopy {
-  font-family: "SvBasicManual";
-  font-size: 16px;
-  line-height: 115%;
-  letter-spacing: 0%;
-}
-
 .Subheading {
   font-family: "SvBasicManual";
   font-size: 26px;
   line-height: normal;
+  letter-spacing: 0%;
+}
+
+.Bodycopy {
+  font-family: "SvBasicManual";
+  font-size: 16px;
+  line-height: 115%;
   letter-spacing: 0%;
 }
 
