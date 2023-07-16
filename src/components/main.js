@@ -27,8 +27,8 @@ const Main = () => {
                         <span style={{ marginRight: 17 }}>
                             julian.deangelis@gmail.com
                         </span>
-                        <img className='Image' src={github} alt='GitHub Logo'/> 
                         <a className='Link' href='https://github.com/juliandeange' target='_blank' rel="noreferrer">
+                            <img className='Image' src={github} alt='GitHub Logo'/> 
                             juliandeange
                         </a>
                     </div>
