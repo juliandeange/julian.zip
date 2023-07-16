@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   background-color: #FFF5EF;
-  font-size: medium;
+  /* font-size: medium; */
   font-family: "SvBasicManual";
 }
 
@@ -16,6 +16,7 @@
   font-size: 64px;
   line-height: normal;
   letter-spacing: 0%;
+  text-align: left;
 }
 
 .Header2 {
@@ -23,6 +24,7 @@
   font-size: 32px;
   line-height: normal;
   letter-spacing: 0%;
+  text-align: left;
 }
 
 .Subheading {
@@ -30,6 +32,7 @@
   font-size: 26px;
   line-height: normal;
   letter-spacing: 0%;
+  text-align: left;
 }
 
 .Bodycopy {
@@ -37,6 +40,21 @@
   font-size: 16px;
   line-height: 115%;
   letter-spacing: 0%;
+  text-align: left;
+}
+
+.Image {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-bottom: -6px;
+  margin-right: 4px;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+
 }
 
 .font-terminal {
