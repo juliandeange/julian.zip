@@ -1,0 +1,5 @@
+export const WorkData1 = 'Developed various large scale engineering applications in an agile environment used for analyzing parts and telemetry downloaded from the International Space Station.'
+export const WordData2 = 'Designed a user interface allowing an operator to send and receive commands and telemetry for robotic components deployed in-orbit or a virtual environment.'
+export const WordData3 = 'Using the Unity game engine, developed a virtual simulator for visualizing 3D objects based on inbound telemetry from an external interface over a UDP connection.'
+export const WordData4 = 'Created a standardized React/C# development environment for future ground station software systems along with an automated continuous integration and unit testing pipeline.'
+export const WordData5 = 'Designed the ground and flight control software of a centrifuge which can be remotely commanded by a scripting engine for in-orbit operations aboard the International Space Station.'
