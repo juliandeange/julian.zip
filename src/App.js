@@ -1,6 +1,7 @@
 import './styles/App.css';
 import Main from './components/main'
 import Education from './components/education'
+import Skills from './components/skills'
 
 const App = () => {
 
@@ -8,7 +9,8 @@ const App = () => {
         <div className="App">
             {/* unzipping... */}
             {/* <Main /> */}
-            <Education />
+            {/* <Education /> */}
+            <Skills />
         </div>
     )
 }

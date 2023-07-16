@@ -57,6 +57,12 @@
 
 }
 
+.ListItem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
 .font-terminal {
   font-family: "SvBasicManual";
 }
