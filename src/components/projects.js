@@ -13,37 +13,25 @@ import {
     CrowdControl
 } from '../data/data-projects'
 
-const Employment = () => {
+const Projects = () => {
 
     return(
         <div style={{ maxWidth: '50%' }}>
             <div className='Header2'>
-                Work
+                Projects
             </div>
             <div className='Subheading' style={{ marginTop: 10, marginBottom: 10 }}>
-                Software Engineer | MDA
-            </div>
-            <div className='SubheadingDate'>
-                Jan 2018 - Present
+                Covontario.ca
             </div>
             <div className='Bodycopy' style={{ marginTop:20 }}>
-                {WorkData1}
+                {Covontario1}
                 <br />
                 <br />
-                {WorkData2}
-                <br />
-                <br />
-                {WorkData3}
-                <br />
-                <br />
-                {WorkData4}
-                <br />
-                <br />
-                {WorkData5}
+                {Covontario2}
             </div>
         </div>
     )
 
 }
 
-export default Employment
+export default Projects

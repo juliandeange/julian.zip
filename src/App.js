@@ -3,6 +3,7 @@ import Main from './components/main'
 import Education from './components/education'
 import Skills from './components/skills'
 import Employment from './components/employment'
+import Projects from './components/projects'
 
 const App = () => {
 
@@ -12,7 +13,8 @@ const App = () => {
             {/* <Main /> */}
             {/* <Education /> */}
             {/* <Skills /> */}
-            <Employment />
+            {/* <Employment /> */}
+            <Projects />
         </div>
     )
 }
