@@ -2,6 +2,7 @@ import './styles/App.css';
 import Main from './components/main'
 import Education from './components/education'
 import Skills from './components/skills'
+import Employment from './components/employment'
 
 const App = () => {
 
@@ -10,7 +11,8 @@ const App = () => {
             {/* unzipping... */}
             {/* <Main /> */}
             {/* <Education /> */}
-            <Skills />
+            {/* <Skills /> */}
+            <Employment />
         </div>
     )
 }

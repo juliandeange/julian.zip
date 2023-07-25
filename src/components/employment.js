@@ -5,15 +5,15 @@ import {
     WorkData3,
     WorkData4,
     WorkData5
-} from '../data/employment'
+} from '../data/data-employment'
 import {
     Covontario1,
     Covontario2,
     Criptoz,
     CrowdControl
-} from '../data/projects'
+} from '../data/data-projects'
 
-const Work = () => {
+const Employment = () => {
 
     return(
         <div style={{ maxWidth: '50%' }}>
@@ -52,4 +52,4 @@ const Work = () => {
 
 }
 
-export default Work
+export default Employment
