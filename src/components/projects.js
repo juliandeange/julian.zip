@@ -1,17 +1,11 @@
 import '../styles/App.css'
-import { 
-    WorkData1,
-    WorkData2,
-    WorkData3,
-    WorkData4,
-    WorkData5
-} from '../data/data-employment'
 import {
     Covontario1,
     Covontario2,
     Criptoz,
     CrowdControl
 } from '../data/data-projects'
+import LinkIcon from '@mui/icons-material/Link';
 
 const Projects = () => {
 
@@ -21,7 +15,9 @@ const Projects = () => {
                 Projects
             </div>
             <div className='Subheading' style={{ marginTop: 10, marginBottom: 10 }}>
-                Covontario.ca
+                <a className='Link' href='https://covontario.ca' target='_blank' rel="noreferrer">
+                    Covontario.ca
+                </a>
             </div>
             <div className='Bodycopy' style={{ marginTop:20 }}>
                 {Covontario1}
@@ -29,9 +25,25 @@ const Projects = () => {
                 <br />
                 {Covontario2}
             </div>
+            <div className='Subheading' style={{ marginTop: 40, marginBottom: 10 }}>
+                <a className='Link' href='https://criptoz.com' target='_blank' rel="noreferrer">
+                    Criptoz.com
+                </a>
+                {/* <LinkIcon sx={{ fontSize: 26 }}/> */}
+            </div>
+            <div className='Bodycopy' style={{ marginTop:20 }}>
+                {Criptoz}
+            </div>
+            <div className='Subheading' style={{ marginTop: 40, marginBottom: 10 }}>
+                <a className='Link' href='https://controlcrowd.ca' target='_blank' rel="noreferrer">
+                    Controlcrowd.ca
+                </a>
+            </div>
+            <div className='Bodycopy' style={{ marginTop:20 }}>
+                {CrowdControl}
+            </div>
         </div>
     )
-
 }
 
 export default Projects
