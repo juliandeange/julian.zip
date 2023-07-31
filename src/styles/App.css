@@ -60,10 +60,17 @@
   margin-right: 4px;
 }
 
+.ImageTooltip {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-bottom: -4px;
+  /* margin-right: 4px; */
+}
+
 .Link {
   text-decoration: none;
   color: black;
-
 }
 
 .ListItem {
