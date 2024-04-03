@@ -22,6 +22,37 @@ export const employmentData = [
             'Designed a user interface allowing an operator to send and receive commands and telemetry for robotic components deployed in-orbit or a virtual environment.',
             'Developed various large scale engineering applications in an agile environment used for analyzing parts and telemetry downloaded from the International Space Station.'
         ]
+    },
+    {
+        company: 'MDA',
+        position: 'Student Software Engineer',
+        dates: 'May 2017 - Aug 2017',
+        location: 'Brampton, Ontario',
+        responsibilites: [
+            'Assisted in the migration of MS Access to SQL Server and development of engineering applications for analysis of the International Space Station.',
+            'Created intuitive user manuals and test plan documents to familiarize engineers with utilizing the software.'
+        ]
+    },
+    {
+        company: 'MDA',
+        position: 'Student Software Engineer',
+        dates: 'May 2016 - Aug 2016',
+        location: 'Brampton, Ontario',
+        responsibilites: [
+            'Assisted in the migration of data from MS Access to a SQL Server Database.',
+            'Managed and ran validation pipelines to ensure data consistency after the SQL Server migration.',
+            'Developed a widely-used user manual on how to interface with the new database software.'
+        ]
+    },
+    {
+        company: 'MDA',
+        position: 'Student Software Engineer',
+        dates: 'May 2015 - Aug 2015',
+        location: 'Brampton, Ontario',
+        responsibilites: [
+            'Wrote procedures for planned outages, and developed visual representations for the outage flow.',
+            'Assisted in network monitoring of the BRIMS system using InterMapper.'
+        ]
     }
 ]
 

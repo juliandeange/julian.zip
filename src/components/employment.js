@@ -6,6 +6,9 @@ const Employment = () => {
 
     return(
         <div style={{ maxWidth: '60%' }}>
+            <div className='Header2'>
+                Employment
+            </div>
             {employmentData.map((data) => {
                 return (
                     <div>
@@ -13,7 +16,12 @@ const Employment = () => {
                             {data.position} | {data.company}
                         </div>
                         <div className='SubheadingDate'>
-                            {data.dates}
+                            <span>
+                                {data.dates}
+                            </span>
+                            <span style={{ float: 'right' }}>
+                                {data.location}
+                            </span>
                         </div>
                         <div className='Bodycopy' style={{ marginTop:20 }}>
                             {data.responsibilites.map((responsibility) => {
