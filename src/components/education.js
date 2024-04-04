@@ -3,7 +3,7 @@ import '../styles/App.css'
 const Education = () => {
 
     return(
-        <div>
+        <div style={{ width: '60%', float: 'left' }}>
             <div className='Header2'>
                 Education
             </div>

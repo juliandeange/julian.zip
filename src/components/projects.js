@@ -1,12 +1,15 @@
 import '../styles/App.css'
-import { projectData } from '../data/data-projects'
 import github from '../media/github-mark.png'
 import LinkIcon from '@mui/icons-material/Link'
+import { useContext } from 'react'
+import { ProjectContext } from '../context/DataContext'
 
 const Projects = () => {
 
+    const projectData = useContext(ProjectContext)
+
     return(
-        <div style={{ maxWidth: '60%' }}>
+        <div>
             <div className='Header2'>
                 Projects
             </div>

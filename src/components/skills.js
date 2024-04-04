@@ -3,7 +3,7 @@ import '../styles/App.css'
 const Skills = () => {
 
     return (
-        <div>
+        <div style={{ width: '60%', float: 'left' }}>
             <div className='Header2'>
                 Skills
             </div>

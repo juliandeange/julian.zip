@@ -1,15 +1,17 @@
 import '../styles/App.css'
-
-import { employmentData } from '../data/data-employment'
+import { useContext } from 'react'
+import { EmploymentContext } from '../context/DataContext'
 
 const Employment = () => {
 
+    const employmentData = useContext(EmploymentContext)
+
     return(
-        <div style={{ maxWidth: '60%' }}>
+        <div >
             <div className='Header2'>
                 Employment
             </div>
-            {employmentData.map((data) => {
+            {employmentData?.map((data) => {
                 return (
                     <div>
                         <div className='Subheading' style={{ marginTop: 10, marginBottom: 10 }}>
