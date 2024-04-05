@@ -4,12 +4,10 @@ import github from '../media/github-mark.png'
 const Main = () => {
 
     return(
-        <div style={{ maxWidth: '50%' }}>
-
+        <div>
             <div className='Header1'>
                 Julian
-            </div>
-            <div className='Header1'>
+                <br />
                 De Angelis
             </div>
             <div className='Header2' style={{ marginTop: 20 }}>
@@ -26,7 +24,6 @@ const Main = () => {
             </div>
         </div>
     )
-
 }
 
 export default Main

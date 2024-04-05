@@ -15,10 +15,9 @@ const App = () => {
             <EmploymentContext.Provider value={employmentData}>
                 <ProjectContext.Provider value={projectData}>
                 <div className="row">
-                    <div className="column1">1</div>
-                    <div className="column2">
+                    <div className="column1">
                         <Main />
-                        <div style={{ display: 'flex' }}>
+                        <div style={{ display: 'flex', marginTop: 50 }}>
                             <Education />
                             <Skills />
                         </div>
@@ -27,18 +26,9 @@ const App = () => {
                         <Employment />
                         <Projects />
                     </div>
-                        
-                    <div className="column1">1</div>
                 </div>
                 </ProjectContext.Provider>
             </EmploymentContext.Provider>
-
-            {/* unzipping... */}
-            {/* <Main /> */}
-            {/* <Education /> */}
-            {/* <Skills /> */}
-            {/* <Employment /> */}
-            <Projects />
         </div>
     )
 }

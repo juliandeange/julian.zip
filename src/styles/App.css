@@ -1,14 +1,16 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   background-color: #FFF5EF;
   /* font-size: medium; */
   font-family: "SvBasicManual";
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .Header1 {
@@ -37,7 +39,7 @@
 
 .SubheadingDate {
   font-family: "SvBasicManual";
-  font-size: 26px;
+  font-size: 22px;
   line-height: normal;
   letter-spacing: 0%;
   text-align: left;
@@ -81,4 +83,28 @@
 
 .font-terminal {
   font-family: "SvBasicManual";
+}
+
+.column1 {
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  min-width: 30%;
+  max-width: 30%;
+}
+
+.column2 {
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
