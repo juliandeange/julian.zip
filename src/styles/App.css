@@ -92,13 +92,14 @@
   margin-left: 10%;
   min-width: 30%;
   max-width: 30%;
+  position: fixed;
 }
 
 .column2 {
   float: left;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-right: 10%;
+  margin-left: 40%;
   min-width: 50%;
   max-width: 50%;
 }

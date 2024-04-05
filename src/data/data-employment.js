@@ -2,7 +2,7 @@ export const employmentData = [
     {
         company: 'Intuit',
         position: 'Sotware Engineer 2',
-        dates: 'Nov 2023 - Present',
+        dates: 'Nov 2023 - April 2024',
         location: 'Toronto, Ontario',
         responsibilites: [
             'Develop, maintain, deploy, and load test large-scale web applications which enable users to import tax documents seamlessly across various platforms.',

@@ -11,6 +11,8 @@ const Skills = () => {
                 <div className='ListItem'>React</div>
                 <div className='ListItem'>C#</div>
                 <div className='ListItem'>JavaScript</div>
+                <div className='ListItem'>Java</div>
+                <div className='ListItem'>HTML/CSS</div>
                 <div className='ListItem'>Figma</div>
             </div>
         </div>

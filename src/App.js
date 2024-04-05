@@ -4,9 +4,10 @@ import Education from './components/education'
 import Skills from './components/skills'
 import Employment from './components/employment'
 import Projects from './components/projects'
-import { EmploymentContext, ProjectContext } from './context/DataContext'; 
+import { EducationContext, EmploymentContext, ProjectContext } from './context/DataContext'; 
 import { employmentData } from './data/data-employment'
 import { projectData } from './data/data-projects';
+import { educationData } from './data/data-education';
 
 const App = () => {
 
@@ -14,19 +15,23 @@ const App = () => {
         <div>
             <EmploymentContext.Provider value={employmentData}>
                 <ProjectContext.Provider value={projectData}>
-                <div className="row">
-                    <div className="column1">
-                        <Main />
-                        <div style={{ display: 'flex', marginTop: 50 }}>
-                            <Education />
-                            <Skills />
+                    <EducationContext.Provider value={educationData}>
+                        <div className="row">
+                            <div className="column1">
+                                <Main />
+                                <div style={{ display: 'flex', marginTop: 50 }}>
+                                    <Education />
+                                    <Skills />
+                                </div>
+                            </div>
+                            <div className="column2">
+                                <Employment />
+                                <div style={{ marginTop: 50 }} >
+                                    <Projects />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="column2">
-                        <Employment />
-                        <Projects />
-                    </div>
-                </div>
+                    </EducationContext.Provider>
                 </ProjectContext.Provider>
             </EmploymentContext.Provider>
         </div>
