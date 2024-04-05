@@ -8,11 +8,16 @@ import { EducationContext, EmploymentContext, ProjectContext } from './context/D
 import { employmentData } from './data/data-employment'
 import { projectData } from './data/data-projects';
 import { educationData } from './data/data-education';
+import useCheckMobileScreen from './hooks/useCheckMobile';
 
 const App = () => {
 
+    const isMobile = useCheckMobileScreen()
+
     return (
+        
         <div>
+            {!isMobile ?
             <EmploymentContext.Provider value={employmentData}>
                 <ProjectContext.Provider value={projectData}>
                     <EducationContext.Provider value={educationData}>
@@ -34,6 +39,10 @@ const App = () => {
                     </EducationContext.Provider>
                 </ProjectContext.Provider>
             </EmploymentContext.Provider>
+            :
+            <div>
+                Mobile version here
+            </div> }
         </div>
     )
 }
