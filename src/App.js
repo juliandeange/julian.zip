@@ -17,32 +17,36 @@ const App = () => {
     return (
         
         <div>
-            {!isMobile ?
             <EmploymentContext.Provider value={employmentData}>
                 <ProjectContext.Provider value={projectData}>
                     <EducationContext.Provider value={educationData}>
-                        <div className="row">
-                            <div className="column1">
+                        {!isMobile ?
+                            <div className="row">
+                                <div className="column1">
+                                    <Main />
+                                    <div style={{ display: 'flex', marginTop: 50 }}>
+                                        <Education />
+                                        <Skills />
+                                    </div>
+                                </div>
+                                <div className="column2">
+                                    <Employment />
+                                    <div style={{ marginTop: 50 }} >
+                                        <Projects />
+                                    </div>
+                                </div>
+                            </div>
+                            :
+                            <div style={{ textAlign: 'center', minWidth: '100vh', alignItems: 'center', justifyContent: 'center' }}>
                                 <Main />
-                                <div style={{ display: 'flex', marginTop: 50 }}>
-                                    <Education />
-                                    <Skills />
-                                </div>
-                            </div>
-                            <div className="column2">
+                                <Skills />
+                                <Education />
                                 <Employment />
-                                <div style={{ marginTop: 50 }} >
-                                    <Projects />
-                                </div>
-                            </div>
-                        </div>
+                            </div> 
+                        }
                     </EducationContext.Provider>
                 </ProjectContext.Provider>
             </EmploymentContext.Provider>
-            :
-            <div>
-                Mobile version here
-            </div> }
         </div>
     )
 }
