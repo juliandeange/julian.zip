@@ -37,11 +37,11 @@ const App = () => {
                                 </div>
                             </div>
                             :
-                            <div style={{ textAlign: 'center', minWidth: '100vh', alignItems: 'center', justifyContent: 'center' }}>
+                            <div style={{ marginTop: '5%' }} >
                                 <Main />
-                                <Skills />
+                                {/* <Skills />
                                 <Education />
-                                <Employment />
+                                <Employment /> */}
                             </div> 
                         }
                     </EducationContext.Provider>

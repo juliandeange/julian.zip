@@ -8,7 +8,6 @@ const Main = () => {
     const isMobile = useCheckMobileScreen()
 
     return(
-        
         <div>
             {!isMobile ? 
                 <div>
@@ -34,10 +33,23 @@ const Main = () => {
                 </div>
             :
                 <div style={{textAlign: 'center'}} >
-                    <div className='Header1' style={{ fontSize: '46px', textAlign: 'center' }} >
+                    <div className='Header1-mobile'>
                         Julian De Angelis
                     </div>
-                    <div className='Header2'>Software Engineer</div>
+                    <div className='Header2-mobile'>
+                        Software Engineer
+                    </div>
+                    <div className='Bodycopy' style={{ marginTop: 10 }}>
+                        <div>
+                            <a className='Link' href='mailto:julian.deangelis@gmail.com' target='_blank' rel='noreferrer'>
+                                julian.deangelis@gmail.com
+                            </a>
+                        </div>
+                        <a className='Link' href='https://github.com/juliandeange' target='_blank' rel='noreferrer'>
+                            <img className='Image' src={github} alt='GitHub Logo'/> 
+                            juliandeange
+                        </a>
+                    </div>
                 </div>
             }
         </div>
