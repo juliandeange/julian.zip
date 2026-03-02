@@ -31,17 +31,17 @@ const App = () => {
                                 </div>
                                 <div className="column2">
                                     <Employment />
-                                    <div style={{ marginTop: 50 }} >
+                                    <div style={{ marginTop: 50 }}>
                                         <Projects />
                                     </div>
                                 </div>
                             </div>
                             :
-                            <div style={{ marginTop: '5%' }} >
+                            <div style={{ marginTop: '5%' }}>
                                 <Main />
-                                {/* <Skills />
                                 <Education />
-                                <Employment /> */}
+                                {/* <Skills /> */}
+                                {/* <Employment /> */}
                             </div> 
                         }
                     </EducationContext.Provider>

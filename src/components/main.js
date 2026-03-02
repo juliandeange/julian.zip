@@ -39,7 +39,7 @@ const Main = () => {
                     <div className='Header2-mobile'>
                         Software Engineer
                     </div>
-                    <div className='Bodycopy' style={{ marginTop: 10 }}>
+                    <div className='Bodycopy-mobile' style={{ marginTop: 10 }}>
                         <div>
                             <a className='Link' href='mailto:julian.deangelis@gmail.com' target='_blank' rel='noreferrer'>
                                 julian.deangelis@gmail.com

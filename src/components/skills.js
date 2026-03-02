@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <div>
             {!isMobile ?
-                <div style={{ width: '60%', float: 'left' }}>
+                <div style={{ marginLeft: 40 }}>
                     <div className='Header2'>
                         Skills
                     </div>
@@ -23,7 +23,17 @@ const Skills = () => {
                 </div>
             :
                 <div>
-
+                    <div className='Header2' style={{ textAlign: 'center' }}>
+                        Skills
+                    </div>
+                    <div className='Bodycopy' style={{ textAlign: 'center' }}>
+                        <div className='ListItem-mobile'>React</div>
+                        <div className='ListItem-mobile'>C#</div>
+                        <div className='ListItem-mobile'>JavaScript</div>
+                        <div className='ListItem-mobile'>Java</div>
+                        <div className='ListItem-mobile'>HTML/CSS</div>
+                        <div className='ListItem-mobile'>Figma</div>
+                    </div>
                 </div> 
             }
         </div>

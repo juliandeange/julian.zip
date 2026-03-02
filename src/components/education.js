@@ -11,7 +11,7 @@ const Education = () => {
     return(
         <div>
             {!isMobile ?
-                <div style={{ width: '60%'}}>
+                <div>
                     <div className='Header2'>
                         Education
                     </div>
@@ -27,7 +27,18 @@ const Education = () => {
                 </div>
             :
                 <div>
-                    
+                    <div className='Header2-mobile'>
+                        Education
+                    </div>
+                    {educationData.map((data) => {
+                        return (
+                            <div className='Bodycopy' style={{ marginTop: 14, marginBottom: 20, textAlign: 'center' }}>
+                                {data.institution} <br />
+                                {data.program} <br />
+                                {data.dates}
+                            </div>
+                        )
+                    })}
                 </div> 
             }
         </div>
