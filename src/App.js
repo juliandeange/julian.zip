@@ -15,7 +15,6 @@ const App = () => {
     const isMobile = useCheckMobileScreen()
 
     return (
-        
         <div>
             <EmploymentContext.Provider value={employmentData}>
                 <ProjectContext.Provider value={projectData}>
@@ -24,8 +23,10 @@ const App = () => {
                             <div className="row">
                                 <div className="column1">
                                     <Main />
-                                    <div style={{ display: 'flex', marginTop: 50 }}>
+                                    <div style={{ marginTop: 50 }}>
                                         <Education />
+                                    </div>
+                                    <div style={{ marginTop: 50 }}>
                                         <Skills />
                                     </div>
                                 </div>
@@ -37,11 +38,12 @@ const App = () => {
                                 </div>
                             </div>
                             :
-                            <div style={{ marginTop: '5%' }}>
+                            <div className="mobile-layout">
                                 <Main />
+                                <Skills />
+                                <Employment />
                                 <Education />
-                                {/* <Skills /> */}
-                                {/* <Employment /> */}
+                                <Projects />
                             </div> 
                         }
                     </EducationContext.Provider>

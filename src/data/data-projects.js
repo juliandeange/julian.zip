@@ -1,12 +1,18 @@
 export const projectData = [
-
+    {
+        name: 'Foto',
+        repo: 'https://github.com/juliandeange',
+        link: 'https://github.com/juliandeange',
+        description: [
+            'A React Native mobile app that allows users to share and view photos exclusively in full-screen portrait mode. (In progress)'
+        ]
+    },
     {
         name: 'Covontario.ca',
         repo: 'https://github.com/juliandeange/Covontario',
         link: 'https://covontario.ca',
         description: [
-            'Provides a graph that tracks the change in Ontario’s COVID-19 statistics. Displays the change and totals for active cases, new cases, recoveries, tests, hospitalizations and mortality.',
-            'Data collection is collected through a node/ruby script deployed on a Raspberry Pi 4 where it is scheduled to run daily. Latest statistics are automatically tweeted to a Twitter account with an audience of over 200.'
+            'Developed a web app visualizing Ontario COVID-19 trends and automated daily Twitter updates, attracting 200+ followers.'
         ]
     },
     {
@@ -14,7 +20,7 @@ export const projectData = [
         repo: 'https://github.com/juliandeange/cryptos',
         link: 'https://criptoz.com',
         description: [
-            'Fetches and displays the current price of many cryptocurrencies. Gives the options to view the prices in multiple currencies.'
+            'Developed a multi-currency cryptocurrency tracker with real-time price updates.'
         ]
     },
     {
@@ -22,7 +28,7 @@ export const projectData = [
         repo: 'https://github.com/juliandeange/CrowdControl',
         link: 'https://controlcrowd.ca',
         description: [
-            'Provides an easy to use interface for multiple users to keep a live count of people in a building. All data is stored inside a firestore database and includes the ability to create new stores and set a capacity for each.'
+            'Created a real-time occupancy tracking tool with Firestore backend, supporting multiple locations and capacity management.'
         ]
     }
 ]

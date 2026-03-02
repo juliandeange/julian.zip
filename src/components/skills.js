@@ -1,6 +1,8 @@
 import '../styles/App.css'
 import useCheckMobileScreen from '../hooks/useCheckMobile'
 
+const skillsList = ['React', 'React Native', 'C#', 'JavaScript', 'TypeScript', 'Java', 'HTML/CSS', 'Figma', 'Azure', 'Firebase', 'Unity']
+
 const Skills = () => {
 
     const isMobile = useCheckMobileScreen()
@@ -8,33 +10,27 @@ const Skills = () => {
     return (
         <div>
             {!isMobile ?
-                <div style={{ marginLeft: 40 }}>
+                <div>
                     <div className='Header2'>
                         Skills
                     </div>
                     <div className='Bodycopy'>
-                        <div className='ListItem'>React</div>
-                        <div className='ListItem'>C#</div>
-                        <div className='ListItem'>JavaScript</div>
-                        <div className='ListItem'>Java</div>
-                        <div className='ListItem'>HTML/CSS</div>
-                        <div className='ListItem'>Figma</div>
+                        {skillsList.map((skill, i) => (
+                            <div key={i} className='ListItem'>{skill}</div>
+                        ))}
                     </div>
                 </div>
             :
-                <div>
-                    <div className='Header2' style={{ textAlign: 'center' }}>
+                <div className='mobile-section'>
+                    <div className='Header2-mobile'>
                         Skills
                     </div>
-                    <div className='Bodycopy' style={{ textAlign: 'center' }}>
-                        <div className='ListItem-mobile'>React</div>
-                        <div className='ListItem-mobile'>C#</div>
-                        <div className='ListItem-mobile'>JavaScript</div>
-                        <div className='ListItem-mobile'>Java</div>
-                        <div className='ListItem-mobile'>HTML/CSS</div>
-                        <div className='ListItem-mobile'>Figma</div>
+                    <div className='skills-grid'>
+                        {skillsList.map((skill, i) => (
+                            <div key={i} className='skill-chip'>{skill}</div>
+                        ))}
                     </div>
-                </div> 
+                </div>
             }
         </div>
     )

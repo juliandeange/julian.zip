@@ -116,27 +116,87 @@
 }
 
 .column1 {
-  float: left;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  min-width: 30%;
-  max-width: 30%;
   position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 28%;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 
+.column1::-webkit-scrollbar {
+  display: none;
 }
 
 .column2 {
-  float: left;
+  margin-left: 42%;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 40%;
-  min-width: 50%;
-  max-width: 50%;
+  width: 48%;
+  max-width: 48%;
+  float: left;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* ===== MOBILE LAYOUT ===== */
+
+.mobile-layout {
+  padding: 24px 20px 60px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.mobile-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.mobile-entry {
+  margin-top: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.mobile-entry:last-child {
+  border-bottom: none;
+}
+
+.Subheading-mobile {
+  font-family: "SvBasicManual";
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+}
+
+.SubheadingDate-mobile {
+  font-family: "SvBasicManual";
+  font-size: 14px;
+  text-align: center;
+  opacity: 50%;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/* Skills chip grid for mobile */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skill-chip {
+  font-family: "SvBasicManual";
+  font-size: 14px;
+  padding: 6px 14px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.04);
 }
